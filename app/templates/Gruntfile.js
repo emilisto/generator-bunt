@@ -64,9 +64,16 @@ module.exports = function (grunt) {
     'stylus',
   ]);
 
+  grunt.registerTask('build', [
+    'build-assets',
+    'bunt',
+  ]);
+
   grunt.registerTask('server', [
+    'build',
     'connect:https',
-    'connect:http:keepalive',
+    'connect:http',
+    'watch'
   ]);
 
 };

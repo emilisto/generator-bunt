@@ -38,8 +38,10 @@ KomponentGenerator.prototype.app = function app() {
   this.mkdir('app/templates');
   this.mkdir('app/styles');
   this.mkdir('app/images');
+  this.mkdir('public');
 
   this.template('styles/main.styl', 'app/styles/main.styl');
+  this.template('public/index.html', 'public/index.html');
   this.copy('_index.js', 'app/index.js');
   this.copy('_templates.js', 'app/templates.js');
 
