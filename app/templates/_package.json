@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "bunt": true,
   "scripts": {
-    "prepublish": "grunt build-assets"
+    "bunt-build-assets": "grunt build-assets"
   },
   "main": "app/index.js",
   "devDependencies": {
